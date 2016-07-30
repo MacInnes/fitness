@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1 Register
+	form(role='form' action="/register" method="post")
+		input(type="text" name="username" placeholder="Enter Username")
+		input(type="password" name="password" placeholder="Enter Password")
+		button(type="submit") Submit
+		button(type="button") Cancel
